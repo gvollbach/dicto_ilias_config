@@ -4,7 +4,6 @@ project:
     rules:      "../ILIAS/dicto/rules"
 analysis:
     store_index: false
-    report_database: false
     ignore:
         - "src"
         - ".*\\.swp"
