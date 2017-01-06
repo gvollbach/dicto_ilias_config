@@ -1,9 +1,20 @@
 project:
     root:       "../ILIAS"
-    storage:    "/tmp"
+    storage:    "/tmp/dicto"
     rules:      "../ILIAS/dicto/rules"
+reports:
+-
+    name: "diff"
+    class: "DiffPerRule"
+    target: "diff_per_rule.html"
+    config:
+        template: "diff_per_rule_bootstrap"
+        source_url: "https://github.com/ILIAS-eLearning/ILIAS/blob/{COMMIT}/{FILE}#L{LINE}"
+-
+    name: "total"
+    class: "TotalPerRule"
+    target: "php://stdout"
 analysis:
-    store_index: false
     ignore:
         - "src"
         - ".*\\.swp"
