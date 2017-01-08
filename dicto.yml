@@ -1,6 +1,6 @@
 project:
     root:       "../ILIAS"
-    storage:    "/tmp/dicto"
+    storage:    "../dicto"
     rules:      "../ILIAS/dicto/rules"
 reports:
 -
